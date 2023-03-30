@@ -461,20 +461,25 @@ export default {
   methods: {
     async getRes() {
       try {
-        const res = await this.$axios.post('http://127.0.0.1:8000/bpc/', {
-          strategicCentrality: parseInt(this.strategicCentrality),
-          feasibiltyOfIt: parseInt(this.feasibiltyOfIt),
-          processBreadth: parseInt(this.processBreadth),
-          seniorManagementCommitment: parseInt(this.seniorManagementCommitment),
-          perfomanceManagement: parseInt(this.perfomanceManagement),
-          processFunctionality: parseInt(this.processFunctionality),
-          processResource: parseInt(this.processResource),
-          structureFeasibility: parseInt(this.structureFeasibility),
-          culturalCapacity: parseInt(this.culturalCapacity),
-          managementWillingness: parseInt(this.managementWillingness),
-          riskPropensity: parseInt(this.riskPropensity),
-          valueChain: parseInt(this.valueChain),
-        })
+        const res = await this.$axios.post(
+          'https://sea-turtle-app-ostth.ondigitalocean.app/bpc/',
+          {
+            strategicCentrality: parseInt(this.strategicCentrality),
+            feasibiltyOfIt: parseInt(this.feasibiltyOfIt),
+            processBreadth: parseInt(this.processBreadth),
+            seniorManagementCommitment: parseInt(
+              this.seniorManagementCommitment
+            ),
+            perfomanceManagement: parseInt(this.perfomanceManagement),
+            processFunctionality: parseInt(this.processFunctionality),
+            processResource: parseInt(this.processResource),
+            structureFeasibility: parseInt(this.structureFeasibility),
+            culturalCapacity: parseInt(this.culturalCapacity),
+            managementWillingness: parseInt(this.managementWillingness),
+            riskPropensity: parseInt(this.riskPropensity),
+            valueChain: parseInt(this.valueChain),
+          }
+        )
 
         if (res.data.BPC == 'evolutionary') {
           this.dialog2 = false
