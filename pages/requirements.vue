@@ -19,7 +19,7 @@
       </v-col>
       <v-col cols="6">
         <div class="mt-8">
-          <v-img src="/smart_.png" height="300" width="600"></v-img>
+          <v-img src="https://res.cloudinary.com/sparaclet-inc/image/upload/v1680217878/sparaclet%20inc/smart__negeva.png" height="300" width="600"></v-img>
         </div>
       </v-col>
     </v-row>
@@ -28,8 +28,8 @@
     </v-row>
     <v-row class="ml-0 mt-6" id="section3">
       <v-col cols="5">
-        <div class="mt-6 ml-4">
-          <v-img src="/req-1.png" height="500" width="650"></v-img>
+        <div class="mt-6 ml-5">
+          <v-img src="https://res.cloudinary.com/sparaclet-inc/image/upload/v1680217875/sparaclet%20inc/req-1_sfnklm.png" height="500" width="650"></v-img>
         </div>
       </v-col>
 
@@ -58,7 +58,7 @@
     <v-row class="ml-0 mt-6" id="section3">
       <v-col cols="6">
         <div class="titleText-section2">
-          <v-row class="mt-4 mr-5 fnt-section2">
+          <v-row class="mt-4 mr-8 fnt-section2">
             System integration is a crucial aspect of building a smart city. It
             involves the integration of various systems, including data
             management systems, communication networks, transportation systems,
@@ -76,7 +76,7 @@
       </v-col>
       <v-col cols="6">
         <div class="mt-5">
-          <v-img src="/system_.jpg" height="500" width="600"></v-img>
+          <v-img src="https://res.cloudinary.com/sparaclet-inc/image/upload/v1680217875/sparaclet%20inc/system__imvw6f.jpg" height="500" width="600"></v-img>
         </div>
       </v-col>
     </v-row>

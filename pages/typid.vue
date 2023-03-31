@@ -16,7 +16,7 @@
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
               Is the targeted process merely tagnetial <b>or</b> integral to the
-              firm's strategic goals and objectives.
+              city's strategic goals and objectives.
             </span>
             <div class="pt-4 text-caption grey--text text--darken-1">
               (1) <b>Strongly disagree</b> <span class="space"></span>(5)
@@ -36,7 +36,7 @@
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
               Does IT enable only incidental change <b>or</b> fundamental
-              process change
+              process change to the project
             </span>
             <div class="pt-4 text-caption grey--text text--darken-1">
               (1) <b>Strongly disagree</b> <span class="space"></span>(5)
@@ -55,8 +55,8 @@
         <v-window-item :value="3">
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
-              Is the scope of the processinsta-functional <b>or</b>
-              interorganization
+              Is the scope of the process intra-functional (limited to a specific area) <b>or</b>
+              interorganization (not limited to a specific area)
             </span>
             <div class="pt-4 text-caption grey--text text--darken-1">
               (1) <b>Strongly disagree</b> <span class="space"></span>(5)
@@ -75,7 +75,7 @@
         <v-window-item :value="4">
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
-              Is the senior management visibly removed <b>or</b> actively
+              Is the senior management visibly removed in the BPR efforts <b>or</b> actively
               involved in the BPR efforts.
             </span>
             <div class="pt-4 text-caption grey--text text--darken-1">
@@ -96,7 +96,7 @@
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
               Are preferred performance measurement critieria efficency based
-              <b>or</b> effectiveness Effectiveness based
+              <b>or</b> Effectiveness based
             </span>
             <div class="pt-4 text-caption grey--text text--darken-1">
               (1) <b>Strongly disagree</b> <span class="space"></span>(5)
@@ -114,6 +114,9 @@
 
         <v-window-item :value="6">
           <v-card-text>
+            <span class="text-caption grey--text text--darken-1">
+            (the ability of a process to perform steps or actions effectively and efficiently, resulting in successful outcomes)<br>
+            </span>
             <span class="text-caption grey--text text--darken-1">
               Is the process fucntioning marginally <b>or</b> is the process not
               functioning well at all
@@ -135,8 +138,8 @@
         <v-window-item :value="7">
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
-              Are only minimal resources <b>or</b>availble to support the
-              process change or are resources abundant ?
+              Are only minimal resources availble to support the
+              process change <b>or</b> are resources abundant ?
             </span>
             <div class="pt-4 text-caption grey--text text--darken-1">
               (1) <b>Strongly disagree</b> <span class="space"></span>(5)
@@ -195,7 +198,7 @@
         <v-window-item :value="10">
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
-              Are only modest impacts on the people tolerable <b>or</b> its
+              Are only modest impacts on the people tolerable <b>or</b> is
               management willing to deal with the consquences of disruptive
               impacts
             </span>
@@ -294,13 +297,13 @@
           </v-btn>
         </v-toolbar>
         <v-card-title>
-          <span class="headline">Evolutionary Approach</span>
+          <span class="headline">Evolutionary Approach should be used</span>
         </v-card-title>
         <v-card-text>
           This approach focuses on gradual and continuous improvements to
-          business processes. This approach is designed to help businesses
+          business processes. This approach is designed to help cities
           achieve better results without causing significant disruptions to
-          their daily operations. By implementing this approach, businesses can
+          their daily operations. By implementing this approach, cities can
           better adapt to changing circumstances and improve their efficiency
           and effectiveness over time.
         </v-card-text>
@@ -350,7 +353,7 @@
           </v-btn>
         </v-toolbar>
         <v-card-title>
-          <span class="headline">Revolutionary Approach</span>
+          <span class="headline">Revolutionary Approach should be used</span>
         </v-card-title>
         <v-card-text>
           This approach to business process change emphasizes large-scale
@@ -407,7 +410,7 @@ export default {
     msg: '',
     snackbarErr: '',
     snackbar: false,
-    timeout: 6000,
+    timeout: 9000,
     step: 1,
     strategicCentrality: '',
     feasibiltyOfIt: '',
@@ -430,9 +433,9 @@ export default {
     currentTitle() {
       switch (this.step) {
         case 1:
-          return 'Strategic Centrality'
+          return 'Strategic Centrality of the project'
         case 2:
-          return 'Feasibility of IT to change project'
+          return 'Feasibility of IT to change the project'
         case 3:
           return 'Process breadth'
         case 4:
@@ -491,7 +494,7 @@ export default {
         }
       } catch (error) {
         console.log(error)
-        this.msg = 'error occured'
+        this.msg = 'error occured: kindly tick all buttons'
         this.snackbarErr = true
       }
     },

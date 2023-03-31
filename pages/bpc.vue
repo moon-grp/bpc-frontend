@@ -18,7 +18,7 @@
       </v-col>
       <v-col cols="6">
         <div class="mt-6">
-          <v-img src="/bpc3.jpg" height="300" width="600" contain></v-img>
+          <v-img src="https://res.cloudinary.com/sparaclet-inc/image/upload/v1680217877/sparaclet%20inc/BPC3_igasik.jpg" height="300" width="600" contain></v-img>
         </div>
       </v-col>
     </v-row>
@@ -28,7 +28,7 @@
     <v-row class="ml-4 mt-4" id="section2">
       <v-col cols="5">
         <div class="mt-6 ml-5">
-          <v-img src="/benefits_.png" height="500" width="600" contain></v-img>
+          <v-img src="https://res.cloudinary.com/sparaclet-inc/image/upload/v1680217876/sparaclet%20inc/Benefits__w3me9x.png" height="500" width="600" contain></v-img>
         </div>
       </v-col>
 
@@ -73,7 +73,7 @@
       </v-col>
       <v-col cols="6">
         <div class="mt-5">
-          <v-img src="/cen_.png" height="300" width="600" contain></v-img>
+          <v-img src="https://res.cloudinary.com/sparaclet-inc/image/upload/v1680217875/sparaclet%20inc/Cen__gwb0gt.png" height="300" width="600" contain></v-img>
         </div>
       </v-col>
     </v-row>
@@ -100,8 +100,8 @@
         specific goals and improve overall performance.
       </v-row>
       <v-row class="my-8" justify="center">
-        <v-btn class="btn-fnt" color="primary" outlined to="/typid">
-          Identify business process change type for smart cities
+        <v-btn class="btn-fnt text-capitalize" color="primary" outlined to="/typid">
+          click to use business process change type identifier tool
         </v-btn>
       </v-row>
     </v-row>
