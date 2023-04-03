@@ -1,5 +1,34 @@
 <template>
-  <div>
+  <div class="fnt"> 
+    <v-expansion-panels>
+      <v-expansion-panel>
+        <v-expansion-panel-header class="text-capitalize">
+         Click for more details about this tool
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          This web-based tool for business process change type identifier in
+          smart cities was developed based on the paper
+          <b
+            >"Business Process Change: A Guide for Implementers" by Vahid
+            Javidroozi, Hanifa Shah, Ardavan Amini, and Gerald Feldman </b
+          >. The paper provided a comprehensive guide to the process of
+          implementing business process changes in organizations. It served as a
+          valuable resource for the development of this tool as it was the only
+          available guide that covered the necessary aspects of implementing
+          this project. The web-based tool was designed to help smart cities
+          identify the type of business process change required to improve their
+          services, and can be developed further to provide them with the
+          necessary data analysis and visualization tools to help with the
+          decision-making process.
+          <a
+            target="_blank"
+            href="https://www.researchgate.net/publication/306250608_Business_process_change_A_guide_for_implementers"
+            >Here is a link to the paper.</a
+          >
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
+
     <v-card class="mx-auto mt-14" max-width="600">
       <v-card-title class="text-h6 font-weight-regular justify-space-between">
         <span>{{ currentTitle }}</span>
@@ -55,7 +84,8 @@
         <v-window-item :value="3">
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
-              Is the scope of the process intra-functional (limited to a specific area) <b>or</b>
+              Is the scope of the process intra-functional (limited to a
+              specific area) <b>or</b>
               interorganization (not limited to a specific area)
             </span>
             <div class="pt-4 text-caption grey--text text--darken-1">
@@ -75,8 +105,8 @@
         <v-window-item :value="4">
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
-              Is the senior management visibly removed in the BPR efforts <b>or</b> actively
-              involved in the BPR efforts.
+              Is the senior management visibly removed in the BPR (Business Process Reengineering) efforts
+              <b>or</b> actively involved in the BPR (Business Process Reengineering) efforts.
             </span>
             <div class="pt-4 text-caption grey--text text--darken-1">
               (1) <b>Strongly disagree</b> <span class="space"></span>(5)
@@ -115,7 +145,8 @@
         <v-window-item :value="6">
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
-            (the ability of a process to perform steps or actions effectively and efficiently, resulting in successful outcomes)<br>
+              (the ability of a process to perform steps or actions effectively
+              and efficiently, resulting in successful outcomes)<br />
             </span>
             <span class="text-caption grey--text text--darken-1">
               Is the process fucntioning marginally <b>or</b> is the process not
@@ -138,8 +169,8 @@
         <v-window-item :value="7">
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
-              Are only minimal resources availble to support the
-              process change <b>or</b> are resources abundant ?
+              Are only minimal resources availble to support the process change
+              <b>or</b> are resources abundant ?
             </span>
             <div class="pt-4 text-caption grey--text text--darken-1">
               (1) <b>Strongly disagree</b> <span class="space"></span>(5)
@@ -219,7 +250,7 @@
         <v-window-item :value="11">
           <v-card-text>
             <span class="text-caption grey--text text--darken-1">
-              Is the BPR effort targeted at an internal support process
+              Is the BPR (Business Process Reengineering) effort targeted at an internal support process
               <b>or</b> a core process
             </span>
             <div class="pt-4 text-caption grey--text text--darken-1">
@@ -301,11 +332,11 @@
         </v-card-title>
         <v-card-text>
           This approach focuses on gradual and continuous improvements to
-          business processes. This approach is designed to help cities
-          achieve better results without causing significant disruptions to
-          their daily operations. By implementing this approach, cities can
-          better adapt to changing circumstances and improve their efficiency
-          and effectiveness over time.
+          business processes. This approach is designed to help cities achieve
+          better results without causing significant disruptions to their daily
+          operations. By implementing this approach, cities can better adapt to
+          changing circumstances and improve their efficiency and effectiveness
+          over time.
         </v-card-text>
         <v-card-title>
           <span class="headline">Example</span>
@@ -341,6 +372,13 @@
               them to better serve their constituents and achieve their goals.
             </span>
           </div>
+        </v-card-text>
+
+        <v-card-title class="headline">Feedback</v-card-title>
+        <v-card-text>
+          <span class="caption">
+            Your feedback is important to us as it will help us to improve the tool based on your needs and preferences. We value your honest opinions and suggestions, and we would be grateful if you could take a few minutes to complete this feedback form. <a target="_blank" href="https://forms.office.com/e/ue6SjNcmsk">Here is the link to the feedback form</a>. Thank you.
+          </span>
         </v-card-text>
       </v-card>
     </v-dialog>
@@ -398,6 +436,13 @@
             changing environment.
           </span>
         </v-card-text>
+        <v-card-title class="headline">Feedback</v-card-title>
+        <v-card-text>
+          <span class="caption">
+            Your feedback is important to us as it will help us to improve the tool based on your needs and preferences. We value your honest opinions and suggestions, and we would be grateful if you could take a few minutes to complete this feedback form. <a target="_blank" href="https://forms.office.com/e/ue6SjNcmsk">Here is the link to the feedback form</a>. Thank you.
+          </span>
+        </v-card-text>
+       
       </v-card>
     </v-dialog>
   </div>
@@ -425,7 +470,7 @@ export default {
     valueChain: '',
     riskPropensity: '',
     ticksLabels: ['Figs', 'Lemon', 'Pear', 'Apple'],
-    dialog1: false,
+    dialog1: true,
     dialog2: false,
   }),
 
@@ -503,7 +548,12 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
 .space {
   margin-left: 10px;
+}
+.fnt{
+  font-family: 'Urbanist', sans-serif;
+  font-size: 14px;
 }
 </style>
