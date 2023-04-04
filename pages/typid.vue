@@ -470,7 +470,7 @@ export default {
     valueChain: '',
     riskPropensity: '',
     ticksLabels: ['Figs', 'Lemon', 'Pear', 'Apple'],
-    dialog1: true,
+    dialog1: false,
     dialog2: false,
   }),
 
